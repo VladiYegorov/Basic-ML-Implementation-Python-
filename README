@@ -1,1 +1,20 @@
-# asdasd
+Description:
+  -Implemented several Classifiers and K-Fold Cross Validation
+  -Tested on THE MNIST DATABASE (http://yann.lecun.com/exdb/mnist/) and several datasets from https://archive.ics.uci.edu/ml/datasets.php
+  
+Input:  MNIST for the classifiers: K-Nearest Neighbors, Perceptron, SoftSVM
+        iris.csv, wine.csv, adult.csv for Naive Bayes classifier
+        
+Output: Analysis on the accuracy of the classifiers using the test dataset
+
+Classifiers Implemented:
+  -K-Nearest Neighbors
+  -Perceptron
+  -SoftSVM using QP solver
+  -SoftSVM using Stochastic Gradient Descent (sgd)
+  -Naive Bayes (Gaussian)
+  
+Options:  The main file is "MachineLearning.java". All the input needed found at the first part of the file.
+          You can change input file, activate Cross Validation, configuring different parameters for the classfiers 
+          and different option for the MNIST dataset (size,binary).
+          
