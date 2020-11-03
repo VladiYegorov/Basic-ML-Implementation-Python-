@@ -2,7 +2,7 @@ import numpy as np
 import operator
 
 def learnknn(Xtrain, Ytrain, k):
-    def classfier(cord): 
+    def classifier(cord): 
         sampleSizeDic = {}
         distToSample = []  
         for x, y in zip(Xtrain, Ytrain):
@@ -15,9 +15,9 @@ def learnknn(Xtrain, Ytrain, k):
             else:
                 sampleSizeDic[i[1]] = 1
         return max(sampleSizeDic.items(), key=operator.itemgetter(1))[0]
-    return classfier
+    return classifier
 
-def predictknn(classfier,Xtest):
-    return list(map(lambda row: classfier(row),Xtest))
+def predictknn(classifier,Xtest):
+    return list(map(lambda row: classifier(row),Xtest))
 
 
