@@ -29,9 +29,9 @@ num_mnist_test = 100
 kFold_CV_Active = False
 num_fold = 5
 
-#parameters for classfiers
+#parameters for classifiers
 #tries all the list with cross validation
-#default: the middle (len(classfierParam)//2)
+#default: the middle (len(classifierParam)//2)
 kSet = [2,3,5]
 maxUpdatesSet = [25,50,100]
 softSVMconstSet = [1,5,10] 
@@ -42,7 +42,7 @@ num1 = 3    ## 1
 num2 = 6    ## -1    
 
 #load the necessary input files 
-def loadDataAndLabels(size, alldata, classfierName = 'default'):
+def loadDataAndLabels(size, alldata, classifierName = 'default'):
     #loading csv file from "csv_data" folder
     if classfierName == 'naiveBayes':
         dataset = hp.load_csv(alldata)
